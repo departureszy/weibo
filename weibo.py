@@ -20,8 +20,8 @@ driver.set_page_load_timeout(3000)
 time.sleep(5)
 while True:
     try:
-        driver.find_element_by_id('loginName').send_keys('departureszy@sina.cn')
-        driver.find_element_by_id('loginPassword').send_keys('521241')
+        driver.find_element_by_id('loginName').send_keys('username')
+        driver.find_element_by_id('loginPassword').send_keys('password')
         driver.find_element_by_id('loginPassword').send_keys(Keys.ENTER)
         break
     except ElementNotVisibleException:
